@@ -2,6 +2,17 @@
 
 The GitHub Actions for automatic generate and deploy hexo-based blog.
 
+Fork from [yrpang/github-actions-hexo](https://github.com/yrpang/github-actions-hexo).
+
+This fork update the nodejs version to node 16, becasue I used some prototype method need node 16.6 higher in script plugin， like [Array.prototype.at()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at#browser_compatibility)
+
+Only one change is:
+```ymal
+- uses: yrpang/github-actions-hexo@v1.3
+# to
+- uses: lber19535/github-actions-hexo@1.0
+```
+
 **Features:**
 
 - Update source files after hexo g
